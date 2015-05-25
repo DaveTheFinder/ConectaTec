@@ -1740,6 +1740,7 @@ label {
     font-weight: lighter;
     line-height: 1.25;
     margin-bottom: 0;
+    text-align: center;
     /* Styles for required inputs */
 }
 
@@ -9918,10 +9919,9 @@ h3 {
 }
 
 @charset "UTF-8";
-.hero {
-    background: url("http://images7.alphacoders.com/330/330811.jpg") no-repeat center center;
+.hero {    background:url("http://www.itesm.mx/wps/wcm/connect/7e3b44804fbf2115ad02af00b2bc783e/campus_chihuahua1.jpg?MOD=AJPERES&CACHEID=7e3b44804fbf2115ad02af00b2bc783e") no-repeat center center;
     background-size: cover;
-    height: 50vh;
+    height: 30vh;
     overflow: hidden;
 }
 
@@ -9937,12 +9937,12 @@ h3 {
 }
 
 .footer .social a {
-    display: inline-block;
+    display:inline-block;
     width: 2rem;
     height: 2rem;
     background-color: #33383b;
     border-radius: 2px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #fff;
     text-align: center;
     line-height: 2rem;
@@ -9950,9 +9950,10 @@ h3 {
 }
 
 .footer .copywrite {
-    color: #8f9296;
-    font-size: 0.875rem;
+    color: #97c3ff;
+    font-size: 1.5rem;
     margin: 1rem 0 1rem 0;
+    text-align: center;
 }
 
 .footer .footer-form textarea,
@@ -9961,38 +9962,38 @@ h3 {
     background-color: #1f2022;
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
     border: none;
-    resize: none;
+    resize: inherit;
     font: inherit;
-    font-size: 0.875rem;
-    font-weight: normal;
-    color: #d1d2d2;
-    padding: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: #ffffff;
+    padding: 1rem;
 }
 
 .footer .footer-form label {
     color: #fff;
     font-size: 1.2rem;
     margin: 0 0 1rem 0;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .footer .footer-form .submit {
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: #33383b;
     color: #ffffff;
     border: 0;
-    padding: 1rem 3.5rem;
-    font-weight: bold;
+    padding: 1rem 2.5rem;
+    font-weight: lighter;
     float: right;
-    margin: 0 1rem 2rem 0;
+    margin: 0 1.35rem 2rem 0;
 }
 
 .footer .footer-links a {
     list-style: none;
-    font-weight: normal;
+    font-weight: lighter;
     color: #fff;
-    padding: 3rem 0 2rem;
-    margin: 0;
+    padding: 1rem 0 1rem;
+    margin: 1;
     font-size: 0.875rem;
 }
 
@@ -10008,18 +10009,18 @@ h3 {
 
 @media only screen and (min-width: 40.063em) {
     .footer {
-        padding: 4rem;
+        padding: 1rem;
     }
     .footer p {
-        text-align: left;
+        text-align: center;
     }
     .footer .social {
-        text-align: left;
+        text-align: center;
         margin: 0;
     }
     .footer .footer-form .contact {
         position: absolute;
-        left: -45%;
+        left: -35%;
         top: 10%;
     }
 }
