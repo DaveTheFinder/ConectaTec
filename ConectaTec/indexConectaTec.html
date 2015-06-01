@@ -26,7 +26,7 @@
                 <div class="large-12 columns">
                     <form>
                         <label>Selecciona uno:</label>
-                        <select id="documento">
+                        <select id="documento" onchange="bothDocuments()">
                             <option value="constancia">Constancia de Estudios</option>
                             <option value="kardex">Kardex</option>
                             <option value="ambos">Constancia de Estudios y Kardex</option>
@@ -35,7 +35,7 @@
 
                     <div class="large-2 small-6 columns">
                         <form>
-                            <label>Copias:</label>
+                            <label id="labelPrimerasCopias">Copias:</label>
                             <select id="copias">
                                 <option value="una">1</option>
                                 <option value="dos">2</option>
@@ -152,53 +152,60 @@
 
     <script>
         function bothDocuments() {
-            var y = document.getElementById("second");
+            var ind = document.getElementById("documento").selectedIndex;
+            var yInd = document.getElementById("documento").options;
 
-            var lab = document.createElement("label");
-            var labTxt = document.createTextNode("Copias Kardex");
-            lab.appendChild(labTxt);
+            if (yInd[ind].index == 2) {
 
-            var x = document.createElement("SELECT");
-            x.setAttribute("id", "copiasSegDoc");
-            document.body.appendChild(x);
-            var z = document.createElement("option");
-            z.setAttribute("value", "una");
-            var t = document.createTextNode("1");
-            z.appendChild(t);
-            var z1 = document.createElement("option");
-            z1.setAttribute("value", "dos");
-            var t1 = document.createTextNode("2");
-            z1.appendChild(t1);
-            var z2 = document.createElement("option");
-            z2.setAttribute("value", "tres");
-            var t2 = document.createTextNode("3");
-            z2.appendChild(t2);
-            var z3 = document.createElement("option");
-            z3.setAttribute("value", "cuatro");
-            var t3 = document.createTextNode("4");
-            z3.appendChild(t3);
-            var z4 = document.createElement("option");
-            z4.setAttribute("value", "cinco");
-            var t4 = document.createTextNode("5");
-            z4.appendChild(t4);
+                var y = document.getElementById("second");
 
-            document.getElementById("copiasSegDoc").appendChild(z);
-            document.getElementById("copiasSegDoc").appendChild(z1);
-            document.getElementById("copiasSegDoc").appendChild(z2);
-            document.getElementById("copiasSegDoc").appendChild(z3);
-            document.getElementById("copiasSegDoc").appendChild(z4);
-            y.appendChild(lab);
-            y.appendChild(x);
+                var div2 = document.createElement("div");
+                div2.setAttribute("id", "insideDiv");
+
+                var lab = document.createElement("label");
+                var labTxt = document.createTextNode("Copias Kardex");
+                lab.appendChild(labTxt);
+
+                var x = document.createElement("SELECT");
+                x.setAttribute("id", "copiasSegDoc");
+                document.body.appendChild(x);
+                var z = document.createElement("option");
+                z.setAttribute("value", "una");
+                var t = document.createTextNode("1");
+                z.appendChild(t);
+                var z1 = document.createElement("option");
+                z1.setAttribute("value", "dos");
+                var t1 = document.createTextNode("2");
+                z1.appendChild(t1);
+                var z2 = document.createElement("option");
+                z2.setAttribute("value", "tres");
+                var t2 = document.createTextNode("3");
+                z2.appendChild(t2);
+                var z3 = document.createElement("option");
+                z3.setAttribute("value", "cuatro");
+                var t3 = document.createTextNode("4");
+                z3.appendChild(t3);
+                var z4 = document.createElement("option");
+                z4.setAttribute("value", "cinco");
+                var t4 = document.createTextNode("5");
+                z4.appendChild(t4);
+
+                document.getElementById("copiasSegDoc").appendChild(z);
+                document.getElementById("copiasSegDoc").appendChild(z1);
+                document.getElementById("copiasSegDoc").appendChild(z2);
+                document.getElementById("copiasSegDoc").appendChild(z3);
+                document.getElementById("copiasSegDoc").appendChild(z4);
+
+                div2.appendChild(lab);
+                div2.appendChild(x);
+                y.appendChild(div2);
+            } else if (yInd[ind].index != 2) {
+                var h = document.getElementById("insideDiv");
+                h.remove(h);
+            }
         }
     </script>
 
-    <script>
-        var ind = document.getElementById("documento").selectedIndex;
-        var yInd = document.getElementById("documento").options;
-        if (yInd[ind].index == 2) {
-            bothDocuments();
-        }
-    </script>
 </body>
 
 </html>
