@@ -2067,6 +2067,7 @@ input[type="submit"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     border-radius: 0;
+    
 }
 /* Respect enforced amount of rows for textarea */
 
@@ -9909,7 +9910,9 @@ th.hide-for-touch {
     }
 }
 
-h1 {}
+h1 {
+font-weight: lighter;
+}
 
 h3 {
     font-size: 1.25rem;

@@ -8,10 +8,10 @@
     <title>ConectaTec</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script src="./messages.js"></script>
 </head>
 
 <body>
-
     <div class="row">
         <div class="large-12 columns">
             <h1>Bienvenido a C.A.S.A.</h1>
@@ -26,22 +26,31 @@
                 <div class="large-12 columns">
                     <form>
                         <label>Selecciona uno:</label>
-                        <select id="documento" onchange="bothDocuments()">
+                        <select id="documento" onchange="enableForCopies()">
                             <option value="constancia">Constancia de Estudios</option>
                             <option value="kardex">Kardex</option>
                             <option value="ambos">Constancia de Estudios y Kardex</option>
                         </select>
                     </form>
 
+
                     <div class="large-2 small-6 columns">
                         <form>
-                            <label id="labelPrimerasCopias">Copias:</label>
+                            <label id="labelPrimerasCopias">Copias Constancia:</label>
                             <select id="copias">
-                                <option value="una">1</option>
-                                <option value="dos">2</option>
-                                <option value="tres">3</option>
-                                <option value="cuatro">4</option>
-                                <option value="cinco">5</option>
+                                <option value="unaC">1</option>
+                                <option value="dosC">2</option>
+                                <option value="tresC">3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="large-2 small-6 columns">
+                        <form>
+                            <label id="labelPrimerasCopias">Copias Kardex:</label>
+                            <select id="copias2" disabled>
+                                <option value="unaK">1</option>
+                                <option value="dosK">2</option>
+                                <option value="tresK">3</option>
                             </select>
                         </form>
                     </div>
@@ -63,19 +72,32 @@
                                 <span class="prefix">A0</span>
                             </div>
                             <div class="small-11 large-11 columns">
-                                <input type="text" placeholder="1234567">
+                                <input id="matricula" type="text" placeholder="1234567">
                             </div>
                         </div>
-                        <div class="large-6 medium-6 small-2 columns"></div>
-                        <div class="large-7 medium-7 small-9 columns">
-                            <a href="#" class="small radius button">Enviar</a>
+                        <div class="row">
+                            <div class="large-2 medium-3 small-6 columns">
+                                <a hreg="" class="small radius button">Generar</a>
+                            </div>
+                            <div class="large-10 medium-9 small-6 columns">
+                                <a href="" class="small radius button">Enviar</a>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-
                 <div class="row">
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="panel">
+                <h4>Tu solicitud queda como:</h4>
+                <p style="text-align: left;">Hola,</p>
+                <p id="mensajePredeterminado">Quisiera solicitar una constancia de estudios.</p>
             </div>
         </div>
     </div>
@@ -124,10 +146,8 @@
                             <a href="http://www.chi.itesm.mx/escolar/inicio/">Escolar</a>
                         </p>
                         <ul class="inline-list social">
-                            <a href="#"><i class="fi-social-facebook"></i></a>
-                            <a href="#"><i class="fi-social-twitter"></i></a>
-                            <a href="#"><i class="fi-social-linkedin"></i></a>
-                            <a href="#"><i class="fi-social-github"></i></a>
+                            <a href="https://www.facebook.com/itesmchihuahua"><i class="fi-social-facebook"></i></a>
+                            <a href="https://twitter.com/ITESMChihuahua"><i class="fi-social-twitter"></i></a>
                         </ul>
                         <p class="copywrite">ITESM Chihuahua - 2015</p>
                     </div>
@@ -150,6 +170,59 @@
         }
     </script>
 
+    <script>
+        function enableForCopies() {
+            var ind = document.getElementById("documento").selectedIndex;
+            var yInd = document.getElementById("documento").options;
+
+            if (yInd[ind].index === 0) {
+                document.getElementById("copias").disabled = false;
+                document.getElementById("copias2").disabled = true;
+            }
+            if (yInd[ind].index === 1) {
+                document.getElementById("copias").disabled = true;
+                document.getElementById("copias2").disabled = false;
+            }
+            if (yInd[ind].index === 2) {
+                document.getElementById("copias").disabled = false;
+                document.getElementById("copias2").disabled = false;
+            }
+        }
+    </script>
+
+    <script>
+        function dataForMessage() {
+            var matriculaTxt = document.getElementById("matricula").value;
+            var checkBox = document.getElementById("checkbox1").checked;
+
+            var ind = document.getElementById("documento").selectedIndex;
+            var yInd = document.getElementById("documento").options;
+            var opcionDocumento = yInd[ind].index;
+
+            var copiasC = 0,
+                copiasK = 0;
+
+            var indC = document.getElementById("copias").selectedIndex;
+            var yIndC = document.getElementById("copias").options;
+            copiasC = yIndC[indC].index + 1;
+            var indK = document.getElementById("copias2").selectedIndex;
+            var yIndK = document.getElementById("copias2").options;
+            copiasK = yIndK[indK].index + 1;
+
+            var message = "";
+
+            if (yInd[ind].index === 0) {
+                message = createMessage(matriculaTxt, opcionDocumento, copiasC, 0, checkBox);
+            } else if (yInd[ind].index === 1) {
+                message = createMessage(matriculaTxt, opcionDocumento, 0, copiasK, checkBox);
+            } else if (yInd[ind].index === 2) {
+                message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox);
+            }
+
+        }
+    </script>
+
+    <!-- 
     <script>
         function bothDocuments() {
             var ind = document.getElementById("documento").selectedIndex;
@@ -181,20 +254,10 @@
                 z2.setAttribute("value", "tres");
                 var t2 = document.createTextNode("3");
                 z2.appendChild(t2);
-                var z3 = document.createElement("option");
-                z3.setAttribute("value", "cuatro");
-                var t3 = document.createTextNode("4");
-                z3.appendChild(t3);
-                var z4 = document.createElement("option");
-                z4.setAttribute("value", "cinco");
-                var t4 = document.createTextNode("5");
-                z4.appendChild(t4);
 
                 document.getElementById("copiasSegDoc").appendChild(z);
                 document.getElementById("copiasSegDoc").appendChild(z1);
                 document.getElementById("copiasSegDoc").appendChild(z2);
-                document.getElementById("copiasSegDoc").appendChild(z3);
-                document.getElementById("copiasSegDoc").appendChild(z4);
 
                 div2.appendChild(lab);
                 div2.appendChild(x);
@@ -205,6 +268,7 @@
             }
         }
     </script>
+-->
 
 </body>
 

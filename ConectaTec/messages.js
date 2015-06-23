@@ -1,0 +1,1 @@
+function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck) {}
