@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
     <script src="./messages.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                     </div>
                     <div class="large-2 small-6 columns">
                         <form>
-                            <label id="labelPrimerasCopias">Copias Kardex:</label>
+                            <label id="labelSegundasCopias">Copias Kardex:</label>
                             <select id="copias2" disabled>
                                 <option value="unaK">1</option>
                                 <option value="dosK">2</option>
@@ -77,7 +78,7 @@
                         </div>
                         <div class="row">
                             <div class="large-2 medium-3 small-6 columns">
-                                <a hreg="" class="small radius button">Generar</a>
+                                <a id="generate" class="small radius button" onclick="dataForMessage()">Generar</a>
                             </div>
                             <div class="large-10 medium-9 small-6 columns">
                                 <a href="" class="small radius button">Enviar</a>
@@ -94,10 +95,10 @@
 
     <div class="row">
         <div class="large-12 columns">
-            <div class="panel">
+            <div id="divMessage" class="panel">
                 <h4>Tu solicitud queda como:</h4>
                 <p style="text-align: left;">Hola,</p>
-                <p id="mensajePredeterminado">Quisiera solicitar una constancia de estudios.</p>
+                <p id="mensajePredeterminado"></p>
             </div>
         </div>
     </div>
@@ -164,13 +165,6 @@
     </script>
 
     <script>
-        function getDocument() {
-            var doc = document.getElementById("documento");
-            document.getElementById("demo").innerHTML = doc.options[doc.selectedIndex].text;
-        }
-    </script>
-
-    <script>
         function enableForCopies() {
             var ind = document.getElementById("documento").selectedIndex;
             var yInd = document.getElementById("documento").options;
@@ -192,33 +186,37 @@
 
     <script>
         function dataForMessage() {
-            var matriculaTxt = document.getElementById("matricula").value;
-            var checkBox = document.getElementById("checkbox1").checked;
+                var matriculaTxt = document.getElementById("matricula").value;
+                var checkBox = document.getElementById("checkbox1").checked;
 
-            var ind = document.getElementById("documento").selectedIndex;
-            var yInd = document.getElementById("documento").options;
-            var opcionDocumento = yInd[ind].index;
+                var ind = document.getElementById("documento").selectedIndex;
+                var yInd = document.getElementById("documento").options;
+                var opcionDocumento = yInd[ind].index;
 
-            var copiasC = 0,
-                copiasK = 0;
+                var indC = document.getElementById("copias").selectedIndex;
+                var yIndC = document.getElementById("copias").options;
+                var copiasC = yIndC[indC].index + 1;
 
-            var indC = document.getElementById("copias").selectedIndex;
-            var yIndC = document.getElementById("copias").options;
-            copiasC = yIndC[indC].index + 1;
-            var indK = document.getElementById("copias2").selectedIndex;
-            var yIndK = document.getElementById("copias2").options;
-            copiasK = yIndK[indK].index + 1;
+                var indK = document.getElementById("copias2").selectedIndex;
+                var yIndK = document.getElementById("copias2").options;
+                var copiasK = yIndK[indK].index + 1;
 
-            var message = "";
+                var message = "";
 
-            if (yInd[ind].index === 0) {
-                message = createMessage(matriculaTxt, opcionDocumento, copiasC, 0, checkBox);
-            } else if (yInd[ind].index === 1) {
-                message = createMessage(matriculaTxt, opcionDocumento, 0, copiasK, checkBox);
-            } else if (yInd[ind].index === 2) {
-                message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox);
-            }
+                if (yInd[ind].index === 0) {
+                    message = createMessage(matriculaTxt, opcionDocumento, copiasC, 0, checkBox);
+                } else if (yInd[ind].index === 1) {
+                    message = createMessage(matriculaTxt, opcionDocumento, 0, copiasK, checkBox);
+                } else if (yInd[ind].index === 2) {
+                    message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox);
+                }
 
+                var messageN = document.createTextNode(message);
+                var messageP = document.createElement("P");
+                messageP.setAttribute("id", "messagePP");
+                messageP.appendChild(messageN);
+                $("#divMessage").html(messageN);
+                //document.getElementById("divMessage").appendChild(messageP); */
         }
     </script>
 
