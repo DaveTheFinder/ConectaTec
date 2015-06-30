@@ -1,80 +1,86 @@
 function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck) {
 
-    var messageDoc = "", messageCopyC = "", messageCopyK = "", messageIdiom = "", finalMessage = "";
+    var messageDoc = "", messageCopyC = "", messageCopyK = "", messageIdiom = "", finalMessage = "", farewellMessage = " ¡Muchas gracias!";
 
     switch (dataOpt) {
     case 0:
         {
-            messageDoc = "Quisiera solicitar una constancia de estudios. ";
+            //messageDoc = "Hola. Quisiera solicitar una constancia de estudios, por favor. ";
             if (dataCopiasC === 1) {
-                 messageCopyC = "";
+                 messageCopyC = "Hola. Quisiera solicitar una constancia de estudios, por favor. ";
             } else if (dataCopiasC === 2) {
-                 messageCopyC = "Con una copia adicional. ";
+                 messageCopyC = "Hola. Quisiera solicitar dos constancias de estudios, por favor. ";
             } else if (dataCopiasC === 3) {
-                 messageCopyC = "Con dos copias adicionales. ";
+                 messageCopyC = "Hola. Quisiera solicitar tres constancias de estudios, por favor. ";
             }
 
-            if (dataCheck === true) {
-                 messageIdiom = "Y que el documento esté en idioma inglés.";
+            if (dataCheck === true && dataCopiasC === 1) {
+                 messageIdiom = "Y que la constancia esté en idioma inglés.";
+            } else if (dataCheck === true && dataCopiasC <=3){
+                 messageIdiom = "Y que las constancias estén en idioma inglés.";
             } else {
                  messageIdiom = "";
             }
 
-            var messageMatricula = " Mi matrícula es: " + dataMatr;
+            var messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
 
-            return finalMessage = messageDoc + messageCopyC + messageIdiom + messageMatricula;
+            return finalMessage = messageCopyC + messageIdiom + messageMatricula + farewellMessage;
         }
 
     case 1:
         {
-             messageDoc = "Quisiera solicitar un kardex. ";
+             //messageDoc = "Hola. Quisiera solicitar un kardex, por favor. ";
             if (dataCopiasK === 1) {
-                 messageCopyK = "";
+                 messageCopyK = "Hola. Quisiera solicitar un Kardex, por favor. ";
             } else if (dataCopiasK === 2) {
-                 messageCopyK = "Con una copia adicional. ";
+                 messageCopyK = "Hola. Quisiera solicitar dos Kardex, por favor. ";
             } else if (dataCopiasK === 3) {
-                 messageCopyK = "Con dos copias adicionales. ";
+                 messageCopyK = "Hola. Quisiera solicitar tres Kardex, por favor. ";
             }
 
-            if (dataCheck === true) {
-                 messageIdiom = "Y que el documento esté en idioma inglés.";
+            if (dataCheck === true && dataCopiasK === 1) {
+                messageIdiom = "Y que el Kardex esté en idioma inglés.";
+            } else if (dataCheck === true && dataCopiasK <=3){
+                messageIdiom = "Y que los Kardex estén en idioma inglés.";
             } else {
-                 messageIdiom = "";
+                messageIdiom = "";
             }
 
-             messageMatricula = " Mi matrícula es: " + dataMatr;
+             messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
 
-            return finalMessage = messageDoc + messageCopyK + messageIdiom + messageMatricula;
+            return finalMessage = messageCopyK + messageIdiom + messageMatricula + farewellMessage;
         }
 
     case 2:
         {
-            var messageDoc = "Quisiera solicitar una constancia de estudios y un kardex. ";
+            var messageDoc = "Hola. Quisiera solicitar documentos de constancia de estudios y kardex, por favor. ";
             if (dataCopiasC === 1) {
-                 messageCopyC = "";
+                 messageCopyC = "Que sea una sola constancia de estudios, ";
             } else if (dataCopiasC === 2) {
-                 messageCopyC = "Con una copia adicional de la constancia de estudios. ";
+                 messageCopyC = "Que sean dos constancias de estudio, ";
             } else if (dataCopiasC === 3) {
-                 messageCopyC = "Con dos copias adicionales de la constancia de estudios. ";
+                 messageCopyC = "Que sean tres constancias de estudio, ";
             }
 
             if (dataCopiasK === 1) {
-                 messageCopyK = "";
+                 messageCopyK = "y un solo Kardex. ";
             } else if (dataCopiasK === 2) {
-                 messageCopyK ="Y una copia adicional del kardex. ";
+                 messageCopyK ="y dos Kardex. ";
             } else if (dataCopiasK === 3) {
-                 messageCopyK = "Y dos copias adicionales kardex. ";
+                 messageCopyK = "y tres Kardex. ";
             }
 
-            if (dataCheck === true) {
-                 messageIdiom = "Y que ambos documentos estén en inglés.";
+            if (dataCheck === true && dataCopiasK === 1 && dataCopiasC===1) {
+                messageIdiom = "Y que la constancia y el Kardex estén en idioma inglés.";
+            } else if (dataCheck === true && dataCopiasK <=3 && dataCopiasC<=3){
+                messageIdiom = "Y que las constancias y los Kardex estén en idioma inglés.";
             } else {
-                 messageIdiom = "";
+                messageIdiom = "";
             }
 
-             messageMatricula = " Mi matrícula es: " + dataMatr;
+             messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
 
-            return finalMessage = "Hola." + messageDoc + messageCopyC + messageCopyK + messageIdiom + messageMatricula;
+            return finalMessage = messageDoc + messageCopyC + messageCopyK + messageIdiom + messageMatricula + farewellMessage;
         }
 
         default:

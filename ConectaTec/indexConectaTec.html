@@ -37,7 +37,7 @@
 
                     <div class="large-2 small-6 columns">
                         <form>
-                            <label id="labelPrimerasCopias">Copias Constancia:</label>
+                            <label id="labelPrimerasCopias">¿Cuántas<br>Constancias?</label>
                             <select id="copias">
                                 <option value="unaC">1</option>
                                 <option value="dosC">2</option>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="large-2 small-6 columns">
                         <form>
-                            <label id="labelSegundasCopias">Copias Kardex:</label>
+                            <label id="labelSegundasCopias">¿Cuántos<br>Kardex?</label>
                             <select id="copias2" disabled>
                                 <option value="unaK">1</option>
                                 <option value="dosK">2</option>
@@ -97,7 +97,7 @@
         <div class="large-12 columns">
             <div id="divMessage" class="panel">
                 <h4>Tu solicitud queda como:</h4>
-                <p style="text-align: left;">Hola,</p>
+               <!-- <p style="text-align: left;"></p> -->
                 <p id="mensajePredeterminado"></p>
             </div>
         </div>
@@ -186,6 +186,11 @@
 
     <script>
         function dataForMessage() {
+            if((document.getElementById("matricula").value.length < 7 || document.getElementById("matricula").value.length > 7)
+                    || isNaN(document.getElementById("matricula").value)==true){
+                alert("¡Ops! Puede que hayas escrito tu matrícula con caracteres de más o de menos... " +
+                        "o que tenga caracteres incorrectos. Corrigela y vuelve a intentarlo.");
+            }else {
                 var matriculaTxt = document.getElementById("matricula").value;
                 var checkBox = document.getElementById("checkbox1").checked;
 
@@ -214,9 +219,10 @@
                 var messageN = document.createTextNode(message);
                 var messageP = document.createElement("P");
                 messageP.setAttribute("id", "messagePP");
-                messageP.appendChild(messageN);
-                $("#divMessage").html(messageN);
+                //messageP.appendChild(messageN);
+                $("P").html(messageN);
                 //document.getElementById("divMessage").appendChild(messageP); */
+            }
         }
     </script>
 
