@@ -2,7 +2,299 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bf275d8-14a5-4974-9937-1cfecad13b93" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConectaTec/indexConectaTec.html" afterPath="$PROJECT_DIR$/ConectaTec/indexConectaTec.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ConectaTec/indexConectaTec.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/.fontcustom-data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/foundation-icons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/foundation-icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/foundation-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/foundation-icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/foundation-icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/preview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-address-book.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-alert.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-align-center.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-align-justify.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-align-left.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-align-right.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-anchor.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-annotate.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-archive.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-arrow-down.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-arrow-left.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-arrow-right.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-arrow-up.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-arrows-compress.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-arrows-expand.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-arrows-in.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-arrows-out.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-asl.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-asterisk.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-at-sign.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-background-color.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-battery-empty.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-battery-full.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-battery-half.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-bitcoin-circle.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-bitcoin.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-blind.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-bluetooth.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-book-bookmark.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-book.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-bookmark.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-braille.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-burst-new.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-burst-sale.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-burst.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-calendar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-camera.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-check.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-checkbox.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-clipboard-notes.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-clipboard-pencil.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-clipboard.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-clock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-closed-caption.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-cloud.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-comment-minus.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-comment-quotes.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-comment-video.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-comment.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-comments.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-compass.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-contrast.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-credit-card.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-crop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-crown.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-css3.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-database.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-die-five.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-die-four.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-die-one.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-die-six.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-die-three.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-die-two.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-dislike.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-dollar-bill.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-dollar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-download.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-eject.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-elevator.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-euro.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-eye.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-fast-forward.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-female-symbol.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-female.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-filter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-first-aid.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-flag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-folder-add.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-folder-lock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-folder.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-foot.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-foundation.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-graph-bar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-graph-horizontal.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-graph-pie.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-graph-trend.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-guide-dog.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-hearing-aid.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-heart.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-home.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-html5.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-indent-less.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-indent-more.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-info.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-italic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-key.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-laptop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-layout.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-lightbulb.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-like.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-link.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-list-bullet.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-list-number.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-list-thumbnails.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-list.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-lock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-loop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-magnifying-glass.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-male-female.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-male-symbol.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-male.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-map.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-marker.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-megaphone.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-microphone.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-minus-circle.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-minus.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-mobile-signal.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-mobile.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-monitor.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-mountains.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-music.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-next.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-no-dogs.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-no-smoking.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-add.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-copy.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-csv.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-delete.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-doc.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-edit.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-export-csv.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-export-doc.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-export-pdf.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-export.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-filled.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-multiple.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-pdf.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-remove.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page-search.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-page.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-paint-bucket.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-paperclip.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-pause.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-paw.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-paypal.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-pencil.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-photo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-play-circle.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-play-video.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-play.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-plus.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-pound.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-power.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-previous.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-price-tag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-pricetag-multiple.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-print.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-prohibited.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-projection-screen.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-puzzle.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-quote.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-record.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-refresh.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-results-demographics.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-results.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-rewind-ten.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-rewind.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-rss.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-safety-cone.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-save.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-share.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-sheriff-badge.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-shield.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-shopping-bag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-shopping-cart.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-shuffle.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-skull.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-500px.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-adobe.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-amazon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-android.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-apple.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-behance.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-bing.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-blogger.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-delicious.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-designer-news.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-deviant-art.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-digg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-dribbble.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-drive.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-dropbox.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-evernote.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-flickr.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-forrst.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-foursquare.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-game-center.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-github.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-google-plus.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-hacker-news.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-hi5.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-instagram.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-joomla.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-lastfm.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-linkedin.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-medium.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-myspace.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-orkut.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-path.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-picasa.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-pinterest.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-rdio.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-reddit.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-skillshare.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-skype.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-smashing-mag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-snapchat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-spotify.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-squidoo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-stack-overflow.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-steam.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-stumbleupon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-treehouse.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-tumblr.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-twitter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-vimeo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-windows.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-xbox.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-yahoo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-yelp.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-youtube.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-zerply.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-social-zurb.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-sound.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-star.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-stop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-strikethrough.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-subscript.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-superscript.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-tablet-landscape.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-tablet-portrait.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-target-two.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-target.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-telephone-accessible.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-telephone.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-text-color.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-thumbnails.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-ticket.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-torso-business.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-torso-female.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-torso.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-torsos-all-female.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-torsos-all.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-torsos-female-male.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-torsos-male-female.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-torsos.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-trash.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-trees.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-trophy.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-underline.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-universal-access.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-unlink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-unlock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-upload-cloud.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-upload.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-usb.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-video.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-volume-none.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-volume-strike.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-volume.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-web.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-wheelchair.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-widget.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-wrench.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-x-circle.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-x.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-yen.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-zoom-in.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foundation-icons/svgs/fi-zoom-out.svg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ConectaTec/index.html" afterPath="$PROJECT_DIR$/ConectaTec/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ConectaTec.iws" />
@@ -24,21 +316,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="indexConectaTec.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
+      <file leaf-file-name="messages.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ConectaTec/messages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2846821">
-              <caret line="218" column="59" selection-start-line="218" selection-start-column="59" selection-end-line="218" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConectaTec/messages.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ConectaTec/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.024566473">
+              <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -65,8 +357,9 @@
         <option value="$PROJECT_DIR$/ConectaTec/css/foundation.css" />
         <option value="$PROJECT_DIR$/ConectaTec/css/verification.html" />
         <option value="$PROJECT_DIR$/ConectaTec/verification.html" />
-        <option value="$PROJECT_DIR$/ConectaTec/messages.js" />
         <option value="$PROJECT_DIR$/ConectaTec/indexConectaTec.html" />
+        <option value="$PROJECT_DIR$/ConectaTec/messages.js" />
+        <option value="$PROJECT_DIR$/ConectaTec/index.html" />
       </list>
     </option>
   </component>
@@ -93,7 +386,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -105,12 +398,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default" />
-        <subPane subId="Project Files" />
-        <subPane subId="Changed Files" />
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -121,6 +408,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files" />
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,7 +533,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
+    <entry file="file://$PROJECT_DIR$/ConectaTec/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConectaTec/css/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -257,7 +565,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
+    <entry file="file://$PROJECT_DIR$/ConectaTec/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConectaTec/css/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -281,14 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConectaTec/messages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -298,14 +606,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ConectaTec/css/foundation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -329,14 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConectaTec/css/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -352,14 +644,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
+    <entry file="file://$PROJECT_DIR$/ConectaTec/css/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -375,60 +660,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConectaTec/css/foundation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/css/foundation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -441,27 +673,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6257225">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -483,15 +694,15 @@
     <entry file="file://$PROJECT_DIR$/ConectaTec/messages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConectaTec/indexConectaTec.html">
+    <entry file="file://$PROJECT_DIR$/ConectaTec/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2846821">
-          <caret line="218" column="59" selection-start-line="218" selection-start-column="59" selection-end-line="218" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.024566473">
+          <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
           <folding />
         </state>
       </provider>
