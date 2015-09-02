@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
     <script src="./messages.js"></script>
+    <script src="./enableCopies.js"></script>
+    <script src="dataMessage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
@@ -161,68 +163,6 @@
     <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();
-    </script>
-
-    <script>
-        function enableForCopies() {
-            var ind = document.getElementById("documento").selectedIndex;
-            var yInd = document.getElementById("documento").options;
-
-            if (yInd[ind].index === 0) {
-                document.getElementById("copias").disabled = false;
-                document.getElementById("copias2").disabled = true;
-            }
-            if (yInd[ind].index === 1) {
-                document.getElementById("copias").disabled = true;
-                document.getElementById("copias2").disabled = false;
-            }
-            if (yInd[ind].index === 2) {
-                document.getElementById("copias").disabled = false;
-                document.getElementById("copias2").disabled = false;
-            }
-        }
-    </script>
-
-    <script>
-        function dataForMessage() {
-            if((document.getElementById("matricula").value.length < 7 || document.getElementById("matricula").value.length > 7)
-                    || isNaN(document.getElementById("matricula").value)==true){
-                alert("¡Ops! Puede que hayas escrito tu matrícula con caracteres de más o de menos... " +
-                        "o que tenga caracteres incorrectos. Corrigela y vuelve a intentarlo.");
-            }else {
-                var matriculaTxt = document.getElementById("matricula").value;
-                var checkBox = document.getElementById("checkbox1").checked;
-
-                var ind = document.getElementById("documento").selectedIndex;
-                var yInd = document.getElementById("documento").options;
-                var opcionDocumento = yInd[ind].index;
-
-                var indC = document.getElementById("copias").selectedIndex;
-                var yIndC = document.getElementById("copias").options;
-                var copiasC = yIndC[indC].index + 1;
-
-                var indK = document.getElementById("copias2").selectedIndex;
-                var yIndK = document.getElementById("copias2").options;
-                var copiasK = yIndK[indK].index + 1;
-
-                var message = "";
-
-                if (yInd[ind].index === 0) {
-                    message = createMessage(matriculaTxt, opcionDocumento, copiasC, 0, checkBox);
-                } else if (yInd[ind].index === 1) {
-                    message = createMessage(matriculaTxt, opcionDocumento, 0, copiasK, checkBox);
-                } else if (yInd[ind].index === 2) {
-                    message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox);
-                }
-
-                var messageN = document.createTextNode(message);
-                var messageP = document.createElement("P");
-                messageP.setAttribute("id", "messagePP");
-                //messageP.appendChild(messageN);
-                $("#mensajePredeterminado").html(messageN);
-                //document.getElementById("divMessage").appendChild(messageP); */
-            }
-        }
     </script>
 
 </body>
