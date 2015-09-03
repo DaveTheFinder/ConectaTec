@@ -11,6 +11,7 @@
     <script src="./messages.js"></script>
     <script src="./enableCopies.js"></script>
     <script src="dataMessage.js"></script>
+    <script src="./sendEmail.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
@@ -83,7 +84,7 @@
                                 <a id="generate" class="small radius button" onclick="dataForMessage()">Generar</a>
                             </div>
                             <div class="large-10 medium-9 small-6 columns">
-                                <a href="" class="small radius button">Enviar</a>
+                                <a id="sendEmail" href="" class="small radius button" onclick="sendTheEmail(); return false">Enviar</a>
                             </div>
                         </div>
 

@@ -1,11 +1,10 @@
 function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck) {
 
-    var messageDoc = "", messageCopyC = "", messageCopyK = "", messageIdiom = "", finalMessage = "", farewellMessage = " ¡Muchas gracias!";
+    var messageCopyC = "", messageCopyK = "", messageIdiom = "", finalMessage = "", farewellMessage = " ¡Muchas gracias!";
 
     switch (dataOpt) {
     case 0:
         {
-            //messageDoc = "Hola. Quisiera solicitar una constancia de estudios, por favor. ";
             if (dataCopiasC === 1) {
                  messageCopyC = "Hola. Quisiera solicitar una constancia de estudios, por favor. ";
             } else if (dataCopiasC === 2) {
@@ -21,7 +20,6 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck) {
             } else {
                  messageIdiom = "";
             }
-
             var messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
 
             return finalMessage = messageCopyC + messageIdiom + messageMatricula + farewellMessage;
@@ -29,7 +27,6 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck) {
 
     case 1:
         {
-             //messageDoc = "Hola. Quisiera solicitar un kardex, por favor. ";
             if (dataCopiasK === 1) {
                  messageCopyK = "Hola. Quisiera solicitar un Kardex, por favor. ";
             } else if (dataCopiasK === 2) {
@@ -45,7 +42,6 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck) {
             } else {
                 messageIdiom = "";
             }
-
              messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
 
             return finalMessage = messageCopyK + messageIdiom + messageMatricula + farewellMessage;
@@ -77,7 +73,6 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck) {
             } else {
                 messageIdiom = "";
             }
-
              messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
 
             return finalMessage = messageDoc + messageCopyC + messageCopyK + messageIdiom + messageMatricula + farewellMessage;

@@ -1,7 +1,6 @@
-/**
- * Created by davidsaenz on 02/09/15.
- */
-function dataForMessage() {
+/** Created by davidsaenz on 03/09/15. **/
+
+function sendTheEmail(){
     if((document.getElementById("matricula").value.length < 7 || document.getElementById("matricula").value.length > 7)
         || isNaN(document.getElementById("matricula").value)==true){
         alert("¡Ops! Puede que hayas escrito tu matrícula con caracteres de más o de menos... " +
@@ -32,9 +31,14 @@ function dataForMessage() {
             message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox);
         }
 
-        var messageN = document.createTextNode(message);
-        var messageP = document.createElement("P");
-        messageP.setAttribute("id", "messagePP");
-        $("#mensajePredeterminado").html(messageN);
+        var mail = "mailto:casa.chi@servicios.itesm.mx"
+                + "?cc= "
+                + "&subject=" + escape("Solicitud de documentos")
+                + "&body=" + encodeURIComponent(message)
+            ;
+
+        window.location.href = mail;
+
     }
 }
+
