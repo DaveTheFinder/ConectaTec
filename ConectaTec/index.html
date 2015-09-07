@@ -10,8 +10,9 @@
     <script src="js/vendor/modernizr.js"></script>
     <script src="./messages.js"></script>
     <script src="./enableCopies.js"></script>
-    <script src="dataMessage.js"></script>
+    <script src="./dataMessage.js"></script>
     <script src="./sendEmail.js"></script>
+    <script src="./sendEmailDoubt.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
@@ -123,21 +124,21 @@
                             <div class="row">
                                 <div class="medium-9 medium-push-3 columns">
                                     <label>
-                                        <label for="email" class="contact">¿Otras dudas?
+                                        <label class="contact">¿Otras dudas?
                                             <br /> ¡Contactanos!</label>
-                                        <input type="email" id="email" placeholder="A01234567@itesm.mx" />
+                                        <!--<input type="email" id="email" placeholder="A01234567@itesm.mx" />-->
                                     </label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="medium-9 medium-push-3 columns">
                                     <label>
-                                        <textarea rows="5" id="message" placeholder="Mensaje"></textarea>
+                                        <textarea rows="5" id="messageDudas" placeholder="Mensaje"></textarea>
                                     </label>
                                 </div>
                                 <div class="row">
                                     <div class="medium-9 medium-push-3 columns">
-                                        <button class="submit" type="submit" value="Submit">Enviar</button>
+                                        <button class="submit" type="submit" value="Submit" onclick="sendDoubts(); return false">Enviar</button>
                                     </div>
                                 </div>
                             </div>

@@ -31,7 +31,7 @@ function sendTheEmail(){
             message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox);
         }
 
-        var mail = "mailto:casa.chi@servicios.itesm.mx"
+        var mail = "mailto:nfc.dev.cita@gmail.com"
                 + "?cc= "
                 + "&subject=" + escape("Solicitud de documentos")
                 + "&body=" + encodeURIComponent(message)
