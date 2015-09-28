@@ -6,6 +6,7 @@ function dataForMessage() {
         || isNaN(document.getElementById("matricula").value)==true){
         alert("¡Ops! Puede que hayas escrito tu matrícula con caracteres de más o de menos... " +
             "o que tenga caracteres incorrectos. Corrigela y vuelve a intentarlo.");
+        
     }else {
         var matriculaTxt = document.getElementById("matricula").value;
         var checkBox = document.getElementById("checkbox1").checked;
