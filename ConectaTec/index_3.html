@@ -13,6 +13,7 @@
     <script src="js/dataMessage.js"></script>
     <script src="js/sendEmail.js"></script>
     <script src="js/sendEmailDoubt.js"></script>
+    <script src="js/idiomSelectors.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
@@ -68,9 +69,12 @@
                     <div class="large-5 small-12 columns">
                         <div data-brackets-id='623' class="large-6 medium-6 columns">
                             <label data-brackets-id='624'>¿Lo necesitas en otro idioma?</label>
-                            <input data-brackets-id='625' id="checkbox1" type="checkbox">
+                            <input data-brackets-id='625' id="checkbox1" type="checkbox" onclick="additionalIdioms()">
                             <label data-brackets-id='626' for="checkbox1">Inglés</label>
                         </div>
+                    </div>
+
+                    <div id="englishSelect" class="large-2 small-12 columns">
                     </div>
 
                     <div class="large-12 columns">
@@ -124,54 +128,6 @@
     <script>
         $(document).foundation();
     </script>
-     <!--<script>
-        function getDocument() {
-            var doc = document.getElementById("documento");
-            document.getElementById("demo").innerHTML = doc.options[doc.selectedIndex].text;
-        }
-    </script>
-
-    <script>
-        function bothDocuments() {
-            var y = document.getElementById("second");
-
-            var lab = document.createElement("label");
-            var labTxt = document.createTextNode("Copias Kardex");
-            lab.appendChild(labTxt);
-
-            var x = document.createElement("SELECT");
-            x.setAttribute("id", "copiasSegDoc");
-            document.body.appendChild(x);
-            var z = document.createElement("option");
-            z.setAttribute("value", "una");
-            var t = document.createTextNode("1");
-            z.appendChild(t);
-            var z1 = document.createElement("option");
-            z1.setAttribute("value", "dos");
-            var t1 = document.createTextNode("2");
-            z1.appendChild(t1);
-            var z2 = document.createElement("option");
-            z2.setAttribute("value", "tres");
-            var t2 = document.createTextNode("3");
-            z2.appendChild(t2);
-            var z3 = document.createElement("option");
-            z3.setAttribute("value", "cuatro");
-            var t3 = document.createTextNode("4");
-            z3.appendChild(t3);
-            var z4 = document.createElement("option");
-            z4.setAttribute("value", "cinco");
-            var t4 = document.createTextNode("5");
-            z4.appendChild(t4);
-
-            document.getElementById("copiasSegDoc").appendChild(z);
-            document.getElementById("copiasSegDoc").appendChild(z1);
-            document.getElementById("copiasSegDoc").appendChild(z2);
-            document.getElementById("copiasSegDoc").appendChild(z3);
-            document.getElementById("copiasSegDoc").appendChild(z4);
-            y.appendChild(lab);
-            y.appendChild(x);
-        }
-     </script> -->
 
 </body>
 
