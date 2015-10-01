@@ -1,26 +1,24 @@
-function additionalIdioms(){
+function additionalIdioms() {
     var idiomCheck = document.getElementById("checkbox1").checked;
 
     if (idiomCheck == true) {
-        if(document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true){
+        if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true) {
             englishConstancia();
-        } else if(document.getElementById("copias").disabled == true && document.getElementById("copias2").disabled == false){
+        } else if (document.getElementById("copias").disabled == true && document.getElementById("copias2").disabled == false) {
             englishKardex();
-        } else if(document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == false){
+        } else if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == false) {
             englishConstancia();
             englishKardex();
         }
 
     } else if (idiomCheck == false) {
-        if(document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true){
+        if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true) {
             var h = document.getElementById("insideDiv");
             h.remove(h);
-        }
-        else if(document.getElementById("copias").disabled == true && document.getElementById("copias2").disabled == false){
+        } else if (document.getElementById("copias").disabled == true && document.getElementById("copias2").disabled == false) {
             var h2 = document.getElementById("insideDiv2");
             h2.remove(h2);
-        }
-        else if(document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == false){
+        } else if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == false) {
             var h = document.getElementById("insideDiv");
             var h2 = document.getElementById("insideDiv2");
             h.remove(h);
@@ -29,14 +27,14 @@ function additionalIdioms(){
     }
 }
 
-function englishConstancia(){
-    var y = document.getElementById("englishSelect");
+function englishConstancia() {
+    var y = document.getElementById("englishSelectConstancia");
 
     var div2 = document.createElement("div");
     div2.setAttribute("id", "insideDiv");
 
     var lab = document.createElement("label");
-    var labTxt = document.createTextNode("Copias Inglés Constancias");
+    var labTxt = document.createTextNode("Copias en Inglés de Constancias");
     lab.appendChild(labTxt);
 
     var x = document.createElement("SELECT");
@@ -62,14 +60,14 @@ function englishConstancia(){
 
 }
 
-function englishKardex(){
-    var y = document.getElementById("englishSelect");
+function englishKardex() {
+    var y = document.getElementById("englishSelectKardex");
 
     var div3 = document.createElement("div");
     div3.setAttribute("id", "insideDiv2");
 
     var lab2 = document.createElement("label");
-    var labTxt2 = document.createTextNode("Copias Inglés Kardex");
+    var labTxt2 = document.createTextNode("Copias en Inglés de Kardex");
     lab2.appendChild(labTxt2);
 
     var xx = document.createElement("SELECT");
