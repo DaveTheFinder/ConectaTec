@@ -1,6 +1,5 @@
-/**
- * Created by davidsaenz on 02/09/15.
- */
+/** Created by davidsaenz on 02/09/15. */
+
 function enableForCopies() {
     var ind = document.getElementById("documento").selectedIndex;
     var yInd = document.getElementById("documento").options;

@@ -1,36 +1,86 @@
-/**
- * Created by davidsaenz on 02/09/15.
- */
+/** Created by davidsaenz on 02/09/15. */
+
+var matriculaTxt, checkBox, ind, yInd, opcionDocumento, indC, yIndC, copiasC, indK, yIndK, copiasK, message;
+var indCIng, yIndCIng, copiasCIng, indKIng, yIndKIng, copiasKIng;
+
 function dataForMessage() {
-    if((document.getElementById("matricula").value.length < 7 || document.getElementById("matricula").value.length > 7)
-        || isNaN(document.getElementById("matricula").value)==true){
+    if ((document.getElementById("matricula").value.length < 7 || document.getElementById("matricula").value.length > 7) || isNaN(document.getElementById("matricula").value) == true) {
         alert("¡Ops! Puede que hayas escrito tu matrícula con caracteres de más o de menos... " +
             "o que tenga caracteres incorrectos. Corrigela y vuelve a intentarlo.");
-        
-    }else {
-        var matriculaTxt = document.getElementById("matricula").value;
-        var checkBox = document.getElementById("checkbox1").checked;
 
-        var ind = document.getElementById("documento").selectedIndex;
-        var yInd = document.getElementById("documento").options;
-        var opcionDocumento = yInd[ind].index;
+    } else if (document.getElementById("checkbox1").checked === false) {
+        matriculaTxt = document.getElementById("matricula").value;
+        checkBox = document.getElementById("checkbox1").checked;
 
-        var indC = document.getElementById("copias").selectedIndex;
-        var yIndC = document.getElementById("copias").options;
-        var copiasC = yIndC[indC].index + 1;
+        ind = document.getElementById("documento").selectedIndex;
+        yInd = document.getElementById("documento").options;
+        opcionDocumento = yInd[ind].index;
 
-        var indK = document.getElementById("copias2").selectedIndex;
-        var yIndK = document.getElementById("copias2").options;
-        var copiasK = yIndK[indK].index + 1;
+        indC = document.getElementById("copias").selectedIndex;
+        yIndC = document.getElementById("copias").options;
+        copiasC = yIndC[indC].index + 1;
 
-        var message = "";
+        indK = document.getElementById("copias2").selectedIndex;
+        yIndK = document.getElementById("copias2").options;
+        copiasK = yIndK[indK].index + 1;
+
+        message = "";
 
         if (yInd[ind].index === 0) {
-            message = createMessage(matriculaTxt, opcionDocumento, copiasC, 0, checkBox);
+            message = createMessage(matriculaTxt, opcionDocumento, copiasC, 0, checkBox, 0, 0);
         } else if (yInd[ind].index === 1) {
-            message = createMessage(matriculaTxt, opcionDocumento, 0, copiasK, checkBox);
+            message = createMessage(matriculaTxt, opcionDocumento, 0, copiasK, checkBox, 0, 0);
         } else if (yInd[ind].index === 2) {
-            message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox);
+            message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox, 0, 0);
+        }
+
+        var messageN = document.createTextNode(message);
+        var messageP = document.createElement("P");
+        messageP.setAttribute("id", "messagePP");
+        $("#mensajePredeterminado").html(messageN);
+
+    } else if (document.getElementById("checkbox1").checked === true) {
+        matriculaTxt = document.getElementById("matricula").value;
+        checkBox = document.getElementById("checkbox1").checked;
+
+        ind = document.getElementById("documento").selectedIndex;
+        yInd = document.getElementById("documento").options;
+        opcionDocumento = yInd[ind].index;
+
+        indC = document.getElementById("copias").selectedIndex;
+        yIndC = document.getElementById("copias").options;
+        copiasC = yIndC[indC].index + 1;
+
+        indK = document.getElementById("copias2").selectedIndex;
+        yIndK = document.getElementById("copias2").options;
+        copiasK = yIndK[indK].index + 1;
+
+        if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true) {
+            indCIng = document.getElementById("copiasIngCons").selectedIndex;
+            yIndCIng = document.getElementById("copiasIngCons").options;
+            copiasCIng = yIndCIng[indCIng].index + 1;
+        } else if (document.getElementById("copias").disabled == true && document.getElementById("copias2").disabled == false) {
+            indKIng = document.getElementById("copiasIngKard").selectedIndex;
+            yIndKIng = document.getElementById("copiasIngKard").options;
+            copiasKIng = yIndKIng[indKIng].index + 1;
+        } else if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == false) {
+            indCIng = document.getElementById("copiasIngCons").selectedIndex;
+            yIndCIng = document.getElementById("copiasIngCons").options;
+            copiasCIng = yIndCIng[indCIng].index + 1;
+
+            indKIng = document.getElementById("copiasIngKard").selectedIndex;
+            yIndKIng = document.getElementById("copiasIngKard").options;
+            copiasKIng = yIndKIng[indKIng].index + 1;
+        }
+
+        message = "";
+
+        if (yInd[ind].index === 0) {
+            message = createMessage(matriculaTxt, opcionDocumento, copiasC, 0, checkBox, copiasCIng, 0);
+        } else if (yInd[ind].index === 1) {
+            message = createMessage(matriculaTxt, opcionDocumento, 0, copiasK, checkBox, 0, copiasKIng);
+        } else if (yInd[ind].index === 2) {
+            message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox, copiasCIng, copiasKIng);
         }
 
         var messageN = document.createTextNode(message);
