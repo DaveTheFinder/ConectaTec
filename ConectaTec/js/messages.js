@@ -1,10 +1,12 @@
+/** Created by davidsaenz sometime between mid-2015. */
+
 function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, englishC, englishK) {
 
     var messageCopyC = "",
         messageCopyK = "",
         messageIdiom = "",
         finalMessage = "",
-        farewellMessage = " ¡Muchas gracias!";
+        farewellMessage = "¡Muchas gracias!";
 
     switch (dataOpt) {
     case 0:
@@ -71,7 +73,7 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
             }
 
             if (dataCheck === true) {
-                messageIdiom = "Que de esos " + englishC + " constancias y " + englishK + " Kardex esté en idioma inglés. ";
+                messageIdiom = "Que de esos, " + englishC + " constancias y " + englishK + " Kardex esté en idioma inglés. ";
             } else {
                 messageIdiom = "";
             }
@@ -88,29 +90,33 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
     }
 }
 
-/*function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck) {
+function confirmMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, englishC, englishK) {
 
-    var messageCopyC = "", messageCopyK = "", messageIdiom = "", finalMessage = "", farewellMessage = " ¡Muchas gracias!";
+    var messageCopyC = "",
+        messageCopyK = "",
+        messageIdiom = "",
+        finalMessage = "",
+        farewellMessage = "¿Es correcto?";
 
     switch (dataOpt) {
         case 0:
         {
             if (dataCopiasC === 1) {
-                messageCopyC = "Hola. Quisiera solicitar una constancia de estudios, por favor. ";
+                messageCopyC = "- Una constancia de estudios.\n";
             } else if (dataCopiasC === 2) {
-                messageCopyC = "Hola. Quisiera solicitar dos constancias de estudios, por favor. ";
+                messageCopyC = "- Dos constancias de estudios.\n";
             } else if (dataCopiasC === 3) {
-                messageCopyC = "Hola. Quisiera solicitar tres constancias de estudios, por favor. ";
+                messageCopyC = "- Tres constancias de estudios.\n";
             }
 
-            if (dataCheck === true && dataCopiasC === 1) {
-                messageIdiom = "Y que la constancia esté en idioma inglés.";
-            } else if (dataCheck === true && dataCopiasC <=3){
-                messageIdiom = "Y que las constancias estén en idioma inglés.";
+            if (dataCheck === true && englishC === 1) {
+                messageIdiom = "- Que sea en inglés.\n";
+            } else if (dataCheck === true && englishC != 1) {
+                messageIdiom = "- Que " + englishC + " de esas " + englishC+1 + " constancias sean en inglés.\n";
             } else {
                 messageIdiom = "";
             }
-            var messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
+            var messageMatricula = "- Tu matrícula es: A0" + dataMatr + "\n\n";
 
             return finalMessage = messageCopyC + messageIdiom + messageMatricula + farewellMessage;
         }
@@ -118,54 +124,53 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
         case 1:
         {
             if (dataCopiasK === 1) {
-                messageCopyK = "Hola. Quisiera solicitar un Kardex, por favor. ";
+                messageCopyK = "- Un Kardex.\n";
             } else if (dataCopiasK === 2) {
-                messageCopyK = "Hola. Quisiera solicitar dos Kardex, por favor. ";
+                messageCopyK = "- Dos Kardex.\n";
             } else if (dataCopiasK === 3) {
-                messageCopyK = "Hola. Quisiera solicitar tres Kardex, por favor. ";
+                messageCopyK = "- Tres Kardex.\n";
             }
 
-            if (dataCheck === true && dataCopiasK === 1) {
-                messageIdiom = "Y que el Kardex esté en idioma inglés.";
-            } else if (dataCheck === true && dataCopiasK <=3){
-                messageIdiom = "Y que los Kardex estén en idioma inglés.";
+            if (dataCheck === true && englishK === 1) {
+                messageIdiom = "- Que sea en inglés.\n";
+            } else if (dataCheck === true && englishK != 1) {
+                messageIdiom = "- Que " + englishK + " de esas " + englishK+1 + " Kardex sean en inglés.\n";
             } else {
                 messageIdiom = "";
             }
-            messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
+            messageMatricula = "- Tu matrícula es: A0" + dataMatr + "\n\n";
 
             return finalMessage = messageCopyK + messageIdiom + messageMatricula + farewellMessage;
         }
 
         case 2:
         {
-            var messageDoc = "Hola. Quisiera solicitar documentos de constancia de estudios y kardex, por favor. ";
+            //var messageDoc = "Hola. Quisiera solicitar documentos de constancia de estudios y kardex, por favor. ";
             if (dataCopiasC === 1) {
-                messageCopyC = "Que sea una sola constancia de estudios, ";
+                messageCopyC = "- Una constancia de estudios.\n";
             } else if (dataCopiasC === 2) {
-                messageCopyC = "Que sean dos constancias de estudio, ";
+                messageCopyC = "- Dos constancias de estudios.\n";
             } else if (dataCopiasC === 3) {
-                messageCopyC = "Que sean tres constancias de estudio, ";
+                messageCopyC = "- Tres constancias de estudios.\n";
             }
 
             if (dataCopiasK === 1) {
-                messageCopyK = "y un solo Kardex. ";
+                messageCopyK = "- Un Kardex.\n";
             } else if (dataCopiasK === 2) {
-                messageCopyK ="y dos Kardex. ";
+                messageCopyK = "- Dos Kardex.\n";
             } else if (dataCopiasK === 3) {
-                messageCopyK = "y tres Kardex. ";
+                messageCopyK = "- Tres Kardex.\n";
             }
 
-            if (dataCheck === true && dataCopiasK === 1 && dataCopiasC===1) {
-                messageIdiom = "Y que la constancia y el Kardex estén en idioma inglés.";
-            } else if (dataCheck === true && dataCopiasK <=3 && dataCopiasC<=3){
-                messageIdiom = "Y que las constancias y los Kardex estén en idioma inglés.";
+            if (dataCheck === true) {
+                messageIdiom = "- De esos: que " + englishC + " constancias y " + englishK + " Kardex que estén en inglés.\n";
             } else {
                 messageIdiom = "";
             }
-            messageMatricula = " Mi matrícula es: A0" + dataMatr + " ";
 
-            return finalMessage = messageDoc + messageCopyC + messageCopyK + messageIdiom + messageMatricula + farewellMessage;
+            messageMatricula = "- Tu matrícula es: A0" + dataMatr + "\n\n";
+
+            return finalMessage = messageCopyC + messageCopyK + messageIdiom + messageMatricula + farewellMessage;
         }
 
         default:
@@ -173,4 +178,4 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
             return finalMessage = "Falta algo.";
         }
     }
-}*/
+}
