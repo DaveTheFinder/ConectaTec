@@ -4,7 +4,7 @@ var matriculaTxt, checkBox, ind, yInd, opcionDocumento, indC, yIndC, copiasC, in
 var indCIng, yIndCIng, copiasCIng, indKIng, yIndKIng, copiasKIng;
 
 function dataForMessage() {
-    if ((document.getElementById("matricula").value.length < 7 || document.getElementById("matricula").value.length > 7) || isNaN(document.getElementById("matricula").value) == true) {
+    if ((document.getElementById("matricula").value.length < 8 || document.getElementById("matricula").value.length > 8) || isNaN(document.getElementById("matricula").value) == true) {
         alert("¡Ops! Puede que hayas escrito tu matrícula con caracteres de más o de menos... " +
             "o que tenga caracteres incorrectos. Corrigela y vuelve a intentarlo.");
 

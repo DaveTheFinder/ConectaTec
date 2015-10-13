@@ -12,8 +12,8 @@
     <script src="js/enableCopies.js"></script>
     <script src="js/dataMessage.js"></script>
     <script src="js/sendEmail.js"></script>
-    <script src="js/sendEmailDoubt.js"></script>
     <script src="js/idiomSelectors.js"></script>
+    <script src="js/restoreValues.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
@@ -68,7 +68,7 @@
 
                     <div class="large-4 small-12 columns">
                         <div data-brackets-id='623' class="large-6 medium-12 columns">
-                            <label data-brackets-id='624'>¿Lo necesitas en otro idioma?</label>
+                            <label data-brackets-id='624'>¿Lo necesitas en inglés?</label>
                             <input data-brackets-id='625' id="checkbox1" type="checkbox" onclick="additionalIdioms()">
                             <label data-brackets-id='626' for="checkbox1">Inglés</label>
                         </div>
@@ -82,10 +82,10 @@
                     <div class="large-12 columns">
                         <div class="row collapse">
                             <div class="small-1 large-1 columns">
-                                <span class="prefix">A0</span>
+                                <span class="prefix">A</span>
                             </div>
                             <div class="small-11 large-11 columns">
-                                <input id="matricula" type="text" placeholder="1234567">
+                                <input id="matricula" type="text" placeholder="01234567">
                             </div>
                         </div>
                         <div class="row">
@@ -101,6 +101,10 @@
             </div>
         </div>
     </div>
+
+    <script>
+    resetValues();
+    </script>
 
     <div class="row">
         <div class="large-12 columns">
