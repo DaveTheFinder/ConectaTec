@@ -44,7 +44,7 @@
                         <form>
                             <label id="labelPrimerasCopias">¿Cuántas
                                 <br>Constancias?</label>
-                            <select id="copias">
+                            <select id="copias" onchange="onUpdate()">
                                 <option value="unaC">1</option>
                                 <option value="dosC">2</option>
                                 <option value="tresC">3</option>
@@ -55,7 +55,7 @@
                         <form>
                             <label id="labelSegundasCopias">¿Cuántos
                                 <br>Kardex?</label>
-                            <select id="copias2" disabled>
+                            <select id="copias2" disabled onchange="onUpdate()">
                                 <option value="unaK">1</option>
                                 <option value="dosK">2</option>
                                 <option value="tresK">3</option>

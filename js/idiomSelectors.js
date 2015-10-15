@@ -99,3 +99,27 @@ function englishKardex() {
     div3.appendChild(xx);
     y.appendChild(div3);
 }
+
+function onUpdate() {
+    var idiomCheck = document.getElementById("checkbox1").checked;
+
+    if (idiomCheck == true) {
+
+        if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true) {
+            var h1 = document.getElementById("insideDiv");
+            h1.remove(h1);
+            englishConstancia();
+        } else if (document.getElementById("copias").disabled == true && document.getElementById("copias2").disabled == false) {
+            var h2 = document.getElementById("insideDiv2");
+            h2.remove(h2);
+            englishKardex();
+        } else if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == false) {
+            var h1 = document.getElementById("insideDiv");
+            var h2 = document.getElementById("insideDiv2");
+            h1.remove(h1);
+            h2.remove(h2);
+            englishConstancia();
+            englishKardex();
+        }
+    }
+}

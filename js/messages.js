@@ -21,6 +21,8 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
 
             if (dataCheck === true && englishC === 1) {
                 messageIdiom = "Y que la constancia esté en inglés. ";
+            } else if (dataCheck === true && englishC === copiasC) {
+                messageIdiom = "Y que las " + englishC + " sean en inglés.\n";
             } else if (dataCheck === true && englishC != 1) {
                 messageIdiom = "Y que " + englishC + " constancias estén en inglés. ";
             } else {
@@ -43,6 +45,8 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
 
             if (dataCheck === true && englishK === 1) {
                 messageIdiom = "Y que el Kardex esté en inglés. ";
+            } else if (dataCheck === true && englishK === copiasK) {
+                messageIdiom = "Y que los " + englishK + " sean en inglés.\n";
             } else if (dataCheck === true && englishK != 1) {
                 messageIdiom = "Y que " + englishK + " Kardex estén en inglés. ";
             } else {
