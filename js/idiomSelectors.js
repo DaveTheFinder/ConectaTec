@@ -1,8 +1,9 @@
 /** Created by davidsaenz on 22/09/15. */
 
-function additionalIdioms() {
-    var idiomCheck = document.getElementById("checkbox1").checked;
+var actualstate = 0;
 
+function additionalIdioms() {
+ var idiomCheck = document.getElementById("checkbox1").checked;
     if (idiomCheck == true) {
         if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true) {
             englishConstancia();
@@ -32,7 +33,6 @@ function additionalIdioms() {
 function englishConstancia() {
     var y, div2, lab, labTxt, x,
         ind, yInd, noConst, h3, z1, t1;
-
     y = document.getElementById("englishSelectConstancia");
 
     div2 = document.createElement("div");
@@ -58,17 +58,14 @@ function englishConstancia() {
 
         document.getElementById("copiasIngCons").appendChild(z1);
     }
-
     div2.appendChild(lab);
     div2.appendChild(x);
     y.appendChild(div2);
-
 }
 
 function englishKardex() {
     var y, div3, lab2, labTxt2, xx,
         ind2, yInd2, noKardex, h4, z2, t2;
-
     y = document.getElementById("englishSelectKardex");
 
     div3 = document.createElement("div");
@@ -91,10 +88,8 @@ function englishKardex() {
         z2 = document.createElement("option");
         t2 = document.createTextNode(h4);
         z2.appendChild(t2);
-
         document.getElementById("copiasIngKard").appendChild(z2);
     }
-
     div3.appendChild(lab2);
     div3.appendChild(xx);
     y.appendChild(div3);
@@ -102,24 +97,64 @@ function englishKardex() {
 
 function onUpdate() {
     var idiomCheck = document.getElementById("checkbox1").checked;
+    var h1, h2;
 
     if (idiomCheck == true) {
 
         if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true) {
-            var h1 = document.getElementById("insideDiv");
+            h1 = document.getElementById("insideDiv");
             h1.remove(h1);
             englishConstancia();
         } else if (document.getElementById("copias").disabled == true && document.getElementById("copias2").disabled == false) {
-            var h2 = document.getElementById("insideDiv2");
+            h2 = document.getElementById("insideDiv2");
             h2.remove(h2);
             englishKardex();
         } else if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == false) {
-            var h1 = document.getElementById("insideDiv");
-            var h2 = document.getElementById("insideDiv2");
+            h1 = document.getElementById("insideDiv");
+            h2 = document.getElementById("insideDiv2");
             h1.remove(h1);
             h2.remove(h2);
             englishConstancia();
             englishKardex();
         }
+
     }
 }
+
+function onUpdateDocs() {
+    var idiomCheck = document.getElementById("checkbox1").checked;
+    var ind = document.getElementById("documento").selectedIndex;
+    var yInd = document.getElementById("documento").options;
+    var select = yInd[ind].index;
+    var h1, h2;
+
+    if (idiomCheck == true) {
+        if (select == 0 && document.getElementById("insideDiv") && document.getElementById("insideDiv2")) {
+            h1 = document.getElementById("insideDiv");
+            h2 = document.getElementById("insideDiv2");
+            h1.remove(h1);
+            h2.remove(h2);
+            englishConstancia();
+        }else  if (select == 1 && document.getElementById("insideDiv") && document.getElementById("insideDiv2")) {
+            h1 = document.getElementById("insideDiv");
+            h2 = document.getElementById("insideDiv2");
+            h1.remove(h1);
+            h2.remove(h2);
+            englishKardex();
+        } else if (select == 0 && document.getElementById("insideDiv2")) {
+            h2 = document.getElementById("insideDiv2");
+            h2.remove(h2);
+            englishConstancia();
+        } else if (select == 1 && document.getElementById("insideDiv")) {
+            h1 = document.getElementById("insideDiv");
+            h1.remove(h1);
+            englishKardex();
+        } else if (select == 2 && document.getElementById("insideDiv")){
+            englishKardex();
+        } else if (select == 2 && document.getElementById("insideDiv2")){
+            englishConstancia();
+        }
+    }
+}
+
+

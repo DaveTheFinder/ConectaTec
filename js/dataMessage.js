@@ -89,10 +89,5 @@ function dataForMessage() {
                 } else{
                     alert("Realiza tus cambios si es necesario, y genera tu nuevo correo.");
                 }
-
-            /*var messageN = document.createTextNode(message);
-            var messageP = document.createElement("P");
-            messageP.setAttribute("id", "messagePP");
-            $("#mensajePredeterminado").html(messageN);*/
         }
 }

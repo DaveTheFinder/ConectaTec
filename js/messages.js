@@ -19,12 +19,14 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
                 messageCopyC = "Hola.\n\n Quisiera solicitar 3 constancias de estudios, por favor. ";
             }
 
-            if (dataCheck === true && englishC === 1) {
+            if (dataCheck === true && (dataCopiasC == 1 && englishC == 1)) {
                 messageIdiom = "Y que la constancia esté en inglés. ";
-            } else if (dataCheck === true && englishC === copiasC) {
+            } else if (dataCheck === true && (dataCopiasC  != 1 && englishC == 1)) {
+                messageIdiom = "Y que 1 sea en inglés.\n";
+            } else if (dataCheck === true && englishC === dataCopiasC ) {
                 messageIdiom = "Y que las " + englishC + " sean en inglés.\n";
             } else if (dataCheck === true && englishC != 1) {
-                messageIdiom = "Y que " + englishC + " constancias estén en inglés. ";
+                messageIdiom = "Y que " + englishC + " constancias sean en inglés. ";
             } else {
                 messageIdiom = "";
             }
@@ -43,12 +45,14 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
                 messageCopyK = "Hola.\n\n Quisiera solicitar 3 Kardex, por favor. ";
             }
 
-            if (dataCheck === true && englishK === 1) {
+            if (dataCheck === true && (dataCopiasK == 1 && englishK == 1)) {
                 messageIdiom = "Y que el Kardex esté en inglés. ";
-            } else if (dataCheck === true && englishK === copiasK) {
+            } else if (dataCheck === true && (dataCopiasK != 1 && englishK == 1)) {
+                messageIdiom = "Y que 1 sea en inglés.\n";
+            } else if (dataCheck === true && englishK === dataCopiasK) {
                 messageIdiom = "Y que los " + englishK + " sean en inglés.\n";
             } else if (dataCheck === true && englishK != 1) {
-                messageIdiom = "Y que " + englishK + " Kardex estén en inglés. ";
+                messageIdiom = "Y que " + englishK + " Kardex sean en inglés. ";
             } else {
                 messageIdiom = "";
             }
@@ -76,22 +80,23 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
                 messageCopyK = "y 3 Kardex. ";
             }
 
-            if (dataCheck === true && englishC === 1) {
-                messageIdiom = "Y que " + englishC + " constancia y " + englishK + " Kardex estén en inglés. ";
+            if (dataCheck === true && dataCopiasC  == 1 && dataCopiasK == 1) {
+                messageIdiom = "Y que ambos sean en inglés. ";
+            } else if (dataCheck === true && englishC === 1) {
+                messageIdiom = "Y que " + englishC + " constancia y " + englishK + " Kardex sean en inglés. ";
             } else if(dataCheck === true) {
-                messageIdiom = "Y que " + englishC + " constancias y " + englishK + " Kardex estén en inglés. ";
+                messageIdiom = "Y que " + englishC + " constancias y " + englishK + " Kardex sean en inglés. ";
             } else {
                 messageIdiom = "";
             }
-
-            messageMatricula = "\nMi matrícula es: A" + dataMatr + " ";
+        messageMatricula = "\n\nMi matrícula es: A" + dataMatr + " ";
 
             return finalMessage = messageDoc + messageCopyC + messageCopyK + messageIdiom + messageMatricula + farewellMessage;
         }
 
     default:
         {
-            return finalMessage = "Falta algo.";
+            return finalMessage = "-Default return-";
         }
     }
 }

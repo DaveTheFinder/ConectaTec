@@ -86,4 +86,6 @@ function sendTheEmail() {
 
         window.location.href = mail1;
     }
+
+    resetValues();
 }
