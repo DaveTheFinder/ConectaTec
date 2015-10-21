@@ -2,7 +2,7 @@
  * Created by davidsaenz on 13/10/15.
  */
 
-function resetValues(){
+function resetValues() {
     var documentos = document.getElementById("documento");
     var copiasC = document.getElementById("copias");
     var copiasK = document.getElementById("copias2");
@@ -18,15 +18,15 @@ function resetValues(){
     matricula.value = "";
     copiasDefaultSet.disabled = true;
 
-    if(document.getElementById("insideDiv") && document.getElementById("insideDiv2")) {
+    if (document.getElementById("insideDiv") && document.getElementById("insideDiv2")) {
         h1 = document.getElementById("insideDiv");
         h2 = document.getElementById("insideDiv2");
         h1.remove(h1);
         h2.remove(h2);
-    } else if(document.getElementById("insideDiv")){
+    } else if (document.getElementById("insideDiv")) {
         h1 = document.getElementById("insideDiv");
         h1.remove(h1)
-    } else if(document.getElementById("insideDiv2")){
+    } else if (document.getElementById("insideDiv2")) {
         h2 = document.getElementById("insideDiv2");
         h2.remove(h2);
     }

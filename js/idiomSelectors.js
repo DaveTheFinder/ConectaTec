@@ -3,7 +3,7 @@
 var actualstate = 0;
 
 function additionalIdioms() {
- var idiomCheck = document.getElementById("checkbox1").checked;
+    var idiomCheck = document.getElementById("checkbox1").checked;
     if (idiomCheck == true) {
         if (document.getElementById("copias").disabled == false && document.getElementById("copias2").disabled == true) {
             englishConstancia();
@@ -135,7 +135,7 @@ function onUpdateDocs() {
             h1.remove(h1);
             h2.remove(h2);
             englishConstancia();
-        }else  if (select == 1 && document.getElementById("insideDiv") && document.getElementById("insideDiv2")) {
+        } else if (select == 1 && document.getElementById("insideDiv") && document.getElementById("insideDiv2")) {
             h1 = document.getElementById("insideDiv");
             h2 = document.getElementById("insideDiv2");
             h1.remove(h1);
@@ -149,12 +149,10 @@ function onUpdateDocs() {
             h1 = document.getElementById("insideDiv");
             h1.remove(h1);
             englishKardex();
-        } else if (select == 2 && document.getElementById("insideDiv")){
+        } else if (select == 2 && document.getElementById("insideDiv")) {
             englishKardex();
-        } else if (select == 2 && document.getElementById("insideDiv2")){
+        } else if (select == 2 && document.getElementById("insideDiv2")) {
             englishConstancia();
         }
     }
 }
-
-

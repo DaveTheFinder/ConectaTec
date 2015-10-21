@@ -21,9 +21,9 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
 
             if (dataCheck === true && (dataCopiasC == 1 && englishC == 1)) {
                 messageIdiom = "Y que la constancia esté en inglés. ";
-            } else if (dataCheck === true && (dataCopiasC  != 1 && englishC == 1)) {
+            } else if (dataCheck === true && (dataCopiasC != 1 && englishC == 1)) {
                 messageIdiom = "Y que 1 sea en inglés.\n";
-            } else if (dataCheck === true && englishC === dataCopiasC ) {
+            } else if (dataCheck === true && englishC === dataCopiasC) {
                 messageIdiom = "Y que las " + englishC + " sean en inglés.\n";
             } else if (dataCheck === true && englishC != 1) {
                 messageIdiom = "Y que " + englishC + " constancias sean en inglés. ";
@@ -80,16 +80,16 @@ function createMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, e
                 messageCopyK = "y 3 Kardex. ";
             }
 
-            if (dataCheck === true && dataCopiasC  == 1 && dataCopiasK == 1) {
+            if (dataCheck === true && dataCopiasC == 1 && dataCopiasK == 1) {
                 messageIdiom = "Y que ambos sean en inglés. ";
             } else if (dataCheck === true && englishC === 1) {
                 messageIdiom = "Y que " + englishC + " constancia y " + englishK + " Kardex sean en inglés. ";
-            } else if(dataCheck === true) {
+            } else if (dataCheck === true) {
                 messageIdiom = "Y que " + englishC + " constancias y " + englishK + " Kardex sean en inglés. ";
             } else {
                 messageIdiom = "";
             }
-        messageMatricula = "\n\nMi matrícula es: A" + dataMatr + " ";
+            messageMatricula = "\n\nMi matrícula es: A" + dataMatr + " ";
 
             return finalMessage = messageDoc + messageCopyC + messageCopyK + messageIdiom + messageMatricula + farewellMessage;
         }
@@ -110,7 +110,7 @@ function confirmMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, 
         farewellMessage = "¿Es correcto?";
 
     switch (dataOpt) {
-        case 0:
+    case 0:
         {
             if (dataCopiasC === 1) {
                 messageCopyC = "- 1 constancia de estudios.\n";
@@ -137,7 +137,7 @@ function confirmMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, 
             return finalMessage = messageCopyC + messageIdiom + messageMatricula + farewellMessage;
         }
 
-        case 1:
+    case 1:
         {
             if (dataCopiasK === 1) {
                 messageCopyK = "- 1 Kardex.\n";
@@ -164,7 +164,7 @@ function confirmMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, 
             return finalMessage = messageCopyK + messageIdiom + messageMatricula + farewellMessage;
         }
 
-        case 2:
+    case 2:
         {
             if (dataCopiasC === 1) {
                 messageCopyC = "- 1 constancia de estudios.\n";
@@ -182,20 +182,20 @@ function confirmMessage(dataMatr, dataOpt, dataCopiasC, dataCopiasK, dataCheck, 
                 messageCopyK = "- 3 Kardex.\n";
             }
 
-             if (dataCheck === true && englishK === copiasK && englishC === copiasC) {
+            if (dataCheck === true && englishK === copiasK && englishC === copiasC) {
                 messageIdiom = "- Todos en inglés.\n";
-             } else if (dataCheck === true) {
-                 messageIdiom = "- De esos: " + englishC + " constancias y " + englishK + " Kardex son en inglés.\n";
-             }  else {
+            } else if (dataCheck === true) {
+                messageIdiom = "- De esos: " + englishC + " constancias y " + englishK + " Kardex son en inglés.\n";
+            } else {
                 messageIdiom = "";
-             }
+            }
 
             messageMatricula = "- Tu matrícula es: A" + dataMatr + "\n\n";
 
             return finalMessage = messageCopyC + messageCopyK + messageIdiom + messageMatricula + farewellMessage;
         }
 
-        default:
+    default:
         {
             return finalMessage = "Falta algo.";
         }
