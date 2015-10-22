@@ -19,8 +19,16 @@
 
 <body>
     <div class="row">
+        <div class="small-12 medium-12 large-12 columns">
+            <p id="timeSet" style="color:white; text-align:right;"></p>
+        </div>
+    </div>
+    <div class="row">
         <div class="large-12 columns">
-            <h1>Bienvenido a C.A.S.A.</h1>
+            <div class="panel">
+                <!--This div can be removed in case of design; change style of h1 too -->
+                <h1 style="color:#4c91c4;">Bienvenido a C.A.S.A.</h1>
+            </div>
         </div>
     </div>
 
@@ -103,7 +111,7 @@
     </div>
 
     <script>
-    resetValues();
+        resetValues();
     </script>
 
     <div class="row">
@@ -133,6 +141,17 @@
     <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();
+    </script>
+    <script type="text/javascript">
+        function setTime() {
+            var texto = "Hoy es ";
+            var date = new Date();
+            var fullDate = date.toLocaleString();
+            var fechaFinal = texto + fullDate;
+            $("#timeSet").text(fechaFinal);
+        }
+        window.onload = setTime;
+        setInterval(setTime, 1000);
     </script>
 
 </body>

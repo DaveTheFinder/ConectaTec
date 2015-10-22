@@ -17,15 +17,17 @@
 
 <body>
     <div class="row">
+        <div class="small-3 medium-3 large-3 columns">
+            <a href="index.html" style="color:#f0f0f0;"><img src="./img/arrow-left-out.png">
+            </a>
+        </div>
+        <div class="small-9 medium-9 large-9 columns">
+            <p id="timeSet" style="color:white; text-align:right;"></p>
+        </div>
     </div>
     <div class="row">
-        <div class="small-12 medium-12 large-12 columns">
-            <div class="small-10 medium-11 large-11 columns">
-                <div class="small-2 medium-1 large-1 columns">
-                    <a href="index.html" style="color:#f0f0f0;"><img src="./img/arrow-left-out.png">Volver</a>
-                </div>
-                <h2>¿Otras dudas?<br>¡Contáctanos!</h2>
-            </div>
+        <div class="small-12 medium-12 large-12 columns panel">
+            <h2 style="color:#4c91c4;">¿Otras dudas?<br>¡Contáctanos!</h2>
         </div>
     </div>
 
@@ -87,6 +89,17 @@
     <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();
+    </script>
+    <script type="text/javascript">
+        function setTime() {
+            var texto = "Hoy es ";
+            var date = new Date();
+            var fullDate = date.toLocaleString();
+            var fechaFinal = texto + fullDate;
+            $("#timeSet").text(fechaFinal);
+        }
+        window.onload = setTime;
+        setInterval(setTime, 1000);
     </script>
 
 </body>
