@@ -82,7 +82,7 @@ function sendTheEmail() {
             message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox, copiasCIng, copiasKIng);
         }
 
-        var mail1 = "mailto:nfc.dev.cita@gmail.com" + "?cc= " + "&subject=" + escape("Solicitud de documentos") + "&body=" + encodeURIComponent(message);
+        var mail1 = "mailto:casa.chi@servicios.itesm.mx" + "?cc= " + "&subject=" + escape("Solicitud de documentos") + "&body=" + encodeURIComponent(message);
 
         window.location.href = mail1;
     }
