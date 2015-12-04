@@ -27,4 +27,5 @@ function enableForCopies() {
         indC.selectedIndex = 0;
         indK.selectedIndex = 0;
     }
+
 }

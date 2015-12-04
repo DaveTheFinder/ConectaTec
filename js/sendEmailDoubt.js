@@ -6,7 +6,7 @@ function sendDoubts() {
 
     var doubtMessage = document.getElementById("messageDudas").value;
 
-    var mail = "mailto:nfc.dev.cita@gmail.com" + "?cc= " + "&subject=" + escape("Dudas acerca de los servicios") + "&body=" + encodeURIComponent(doubtMessage);
+    var mail = "mailto:casa.chi@servicios.itesm.mx" + "?cc= " + "&subject=" + escape("Dudas acerca de los servicios") + "&body=" + encodeURIComponent(doubtMessage);
 
     window.location.href = mail;
 }

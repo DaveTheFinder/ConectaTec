@@ -34,9 +34,10 @@ function sendTheEmail() {
             message = createMessage(matriculaTxt, opcionDocumento, copiasC, copiasK, checkBox, 0, 0);
         }
 
-        var mail = "mailto:nfc.dev.cita@gmail.com" + "?cc= " + "&subject=" + escape("Solicitud de documentos") + "&body=" + encodeURIComponent(message);
+        var mail = "mailto:casa.chi@servicios.itesm.mx" + "?cc= " + "&subject=" + escape("Solicitud de documentos") + "&body=" + encodeURIComponent(message);
 
         window.location.href = mail;
+
 
     } else if (document.getElementById("checkbox1").checked === true) {
         matriculaTxt = document.getElementById("matricula").value;
